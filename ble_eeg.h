@@ -44,12 +44,12 @@
 #define BMS_UUID_BASE {0x57, 0x80, 0xD2, 0x94, 0xA3, 0xB2, 0xFE, 0x39, 0x5F, 0x87, 0xFD, 0x35, 0x00, 0x00, 0x8B, 0x22};
 
 // Service UUID
-#define BLE_UUID_BIOPOTENTIAL_EEG_MEASUREMENT_SERVICE	0xE0F0
+#define BLE_UUID_BIOPOTENTIAL_EEG_MEASUREMENT_SERVICE	0x3460
 
 // Characteristic UUIDs
-#define BLE_UUID_EEG_CH1_CHAR		0xE0F1
-#define BLE_UUID_EEG_CH2_CHAR		0xE0F2
-#define BLE_UUID_EEG_CH3_CHAR		0xE0F3
+#define BLE_UUID_EEG_CH1_CHAR		0x3461 //EMG
+#define BLE_UUID_EEG_CH2_CHAR		0x3462
+#define BLE_UUID_EEG_CH3_CHAR		0x3463
 #define BLE_UUID_EEG_CH4_CHAR		0xE0F4
 
 // Maximum number of body voltage measurement bytes buffered by the application
