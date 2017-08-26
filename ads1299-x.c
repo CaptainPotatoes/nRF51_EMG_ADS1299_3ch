@@ -115,8 +115,8 @@ void ads_spi_init(void) {
 		nrf_drv_spi_config_t spi_config = NRF_DRV_SPI_DEFAULT_CONFIG(0);
 		spi_config.bit_order						= NRF_DRV_SPI_BIT_ORDER_MSB_FIRST;
 		//SCLK = 1MHz is right speed because fCLK = (1/2)*SCLK, and fMOD = fCLK/4, and fMOD MUST BE 128kHz. Do the math.
-		spi_config.frequency						= NRF_DRV_SPI_FREQ_1M;
-		spi_config.irq_priority					= APP_IRQ_PRIORITY_LOW;
+		spi_config.frequency						= NRF_DRV_SPI_FREQ_2M;
+		spi_config.irq_priority					= APP_IRQ_PRIORITY_HIGH;
 		spi_config.mode									= NRF_DRV_SPI_MODE_1; //CPOL = 0 (Active High); CPHA = TRAILING (1)
 		spi_config.miso_pin 						= ADS1299_SPI_MISO_PIN;
 		spi_config.sck_pin 							= ADS1299_SPI_SCLK_PIN;

@@ -357,9 +357,9 @@ void ble_eeg_update(ble_eeg_t *p_eeg, int32_t *eeg, int32_t *eeg2, int32_t *eeg3
 
 
 		//Initialize gatts buffer for each channel
-		sd_ble_gatts_value_set(p_eeg->conn_handle, p_eeg->eeg_ch1_handles.value_handle, &gatts_value_ch1);
-		sd_ble_gatts_value_set(p_eeg->conn_handle, p_eeg->eeg_ch2_handles.value_handle, &gatts_value_ch2);
-		sd_ble_gatts_value_set(p_eeg->conn_handle, p_eeg->eeg_ch3_handles.value_handle, &gatts_value_ch3);
+		//sd_ble_gatts_value_set(p_eeg->conn_handle, p_eeg->eeg_ch1_handles.value_handle, &gatts_value_ch1);
+		//sd_ble_gatts_value_set(p_eeg->conn_handle, p_eeg->eeg_ch2_handles.value_handle, &gatts_value_ch2);
+		//sd_ble_gatts_value_set(p_eeg->conn_handle, p_eeg->eeg_ch3_handles.value_handle, &gatts_value_ch3);
 }
 
 uint32_t ble_eeg_send_24bit_array_ch1 (ble_eeg_t *p_eeg) {

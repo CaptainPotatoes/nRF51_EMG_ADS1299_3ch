@@ -129,8 +129,8 @@
 /* DEFAULT REGISTER VALUES ********************************************************/
 
 //Use multi-line copy from excel file.
-#define	ADS1299_REGDEFAULT_CONFIG1		 		0xB6			///< Configuration register 1. Controls conversion mode and data rate.
-#define	ADS1299_REGDEFAULT_CONFIG2		 		0xD2			///< Configuration register 2. Controls LOFF comparator, reference, CLK pin, and test signal.
+#define	ADS1299_REGDEFAULT_CONFIG1		 		0x96			///< Configuration register 1. Controls conversion mode and data rate.
+#define	ADS1299_REGDEFAULT_CONFIG2		 		0xD0			///< Configuration register 2. Controls LOFF comparator, reference, CLK pin, and test signal.
 #define ADS1299_REGDEFAULT_CONFIG3				0xEC
 #define	ADS1299_REGDEFAULT_LOFF		 				0x00			///< Lead-off control register. Controls lead-off frequency, magnitude, and threshold.
 #define	ADS1299_REGDEFAULT_CH1SET		 			0x60			///< Channel 1 settings register. Controls channel 1 input mux, gain, and power-down.
@@ -141,7 +141,7 @@
 #define	ADS1299_REGDEFAULT_CH6SET		 			0xF1
 #define	ADS1299_REGDEFAULT_CH7SET		 			0xF1
 #define	ADS1299_REGDEFAULT_CH8SET		 			0xF1
-#define	ADS1299_REGDEFAULT_BIAS_SENSP	 		0x07			///< 3-channel biasing.
+#define	ADS1299_REGDEFAULT_BIAS_SENSP	 		0x07			///< 1-channel biasing.
 #define	ADS1299_REGDEFAULT_BIAS_SENSN	 		0x07			///<
 #define	ADS1299_REGDEFAULT_LOFF_SENSP	 		0x00			///<
 #define	ADS1299_REGDEFAULT_LOFF_SENSN	 		0x00
@@ -155,13 +155,13 @@
 
 
 //
-// 0x00 =  125SPS
-// 0x01 =  250SPS
-// 0x02 =  500SPS
-// 0x03 = 1000SPS
-// 0x04 = 2000SPS
-// 0x05 = 4000SPS
-// 0x06 = 8000SPS
+//0x96 = 250SPS
+//0x95 = 500SPS
+//0x94 = 1kSPS
+//0x93 = 2kSPS
+//0x92 = 4kSPS
+//0x91 = 8kSPS
+//0x90 = 16kSPS
 
 
 /**************************************************************************************************************************************************
