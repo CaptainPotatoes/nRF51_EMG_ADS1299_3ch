@@ -179,7 +179,7 @@ void ads1299_init_regs(void) {
 
 void ads1299_powerup_reset(void)
 {
-	#if defined(BOARD_PCA10028) | defined(BOARD_NRF_BREAKOUT)
+	#if defined(BOARD_PCA10028) | defined(BOARD_NRF_BREAKOUT) | defined(BOARD_FLEXIBLE_EMG_V1)
 		nrf_gpio_pin_clear(ADS1299_PWDN_RST_PIN);
 	#endif
 	#if defined(BOARD_FULL_EEG_V1)
@@ -192,7 +192,7 @@ void ads1299_powerup_reset(void)
 
 void ads1299_powerdn(void)
 {
-	#if defined(BOARD_PCA10028) | defined(BOARD_NRF_BREAKOUT)
+	#if defined(BOARD_PCA10028) | defined(BOARD_NRF_BREAKOUT) | defined(BOARD_FLEXIBLE_EMG_V1)
 		nrf_gpio_pin_clear(ADS1299_PWDN_RST_PIN);
 	#endif
 	#if defined(BOARD_FULL_EEG_V1)
@@ -205,7 +205,7 @@ void ads1299_powerdn(void)
 
 void ads1299_powerup(void)
 {
-	#if defined(BOARD_PCA10028) | defined(BOARD_NRF_BREAKOUT)
+	#if defined(BOARD_PCA10028) | defined(BOARD_NRF_BREAKOUT) | defined(BOARD_FLEXIBLE_EMG_V1)
 		nrf_gpio_pin_set(ADS1299_PWDN_RST_PIN);
 	#endif
 	#if defined(BOARD_FULL_EEG_V1)
